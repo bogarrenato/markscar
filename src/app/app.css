@@ -1,28 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-  font-family: 'Roboto', sans-serif;
-
-
-}
-
-.sidebar-heading{
-  margin-left: 5px;
-  font-weight: bold;
-
-
-}
-
-
-
-
 body {
   overflow-x: hidden;
-
 }
 
 #sidebar-wrapper {
   min-height: 100vh;
-
   margin-left: -15rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -43,16 +24,13 @@ body {
   min-width: 100vw;
 }
 
-
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
-
 }
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
-
   }
 
   #page-content-wrapper {
@@ -69,9 +47,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  #carpartz{
-    margin-left: 20px;
-  }
   .show
   {
     margin-left: -15rem!important;
