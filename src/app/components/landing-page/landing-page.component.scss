@@ -1,4 +1,22 @@
+$visible_var: visible;
+$padding_var:0.2px;
+$margin_var:5px;
+
 @media (min-width: 768px) {
+
+  *{
+    padding: $padding_var;
+
+  }
+  #smallpicture{
+    height: 150px;
+  }
+
+  #bigpicture{
+    height: 300px;
+    opacity: 0.8;
+  }
+
 
 .image{
   display: inline-block;
@@ -17,6 +35,12 @@ figure{
   width: 100%;
   height: auto;
   cursor: pointer;
+
+}
+
+#picturetext{
+  visibility: hidden;
+
 }
 
 .image #zoom-in img{
@@ -25,7 +49,18 @@ figure{
 }
 
 .image #zoom-in:hover img{
-  transform: scale(1.4);
+  transform: scale(1);
+  opacity: 0.8;
+}
+
+.imagee #zoom-inn img{
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.imagee #zoom-inn:hover img{
+  transform: scale(1);
+  opacity: 0.8;
 }
 
 }
@@ -33,7 +68,7 @@ figure{
 
 @media (max-width: 768px) {
 
- 
+
 
   figure{
     overflow: hidden;
@@ -53,7 +88,8 @@ figure{
   }
 
   .image #zoom-in:hover img{
-    transform: scale(1.4);
+    transform: scale(1.1);
+
   }
 
   }
